@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { Triangle } from "react-loader-spinner";
+import "./App.css";
 
 export default function Weather(props) {
   function handleResponse(response) {
