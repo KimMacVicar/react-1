@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./styles.css";
+import "./App.css";
 
 export default function Search() {
   let [city, setCity] = useState("");
@@ -10,8 +10,8 @@ export default function Search() {
     event.preventDefault();
 
     let apiKey = "2d34b827fa05a5518d1b4d8e1f540549";
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-    axios.get(url).then(showWeather);
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(showWeather);
   }
 
   function showWeather(response) {
@@ -44,7 +44,7 @@ export default function Search() {
 
   return (
     <div className="search">
-      <form onSubmit={submitSearch}>
+      <form className="searchForm" onSubmit={submitSearch}>
         <input
           type="search"
           placeholder="Enter a city..."
