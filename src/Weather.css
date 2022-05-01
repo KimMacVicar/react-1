@@ -32,12 +32,12 @@
 
 .Weather .formatteddate {
   line-height: 30px;
-  font-weight: bolder;
+  font-weight: normal;
 }
 .Weather .weather-temperature canvas {
   display: flex;
   margin-bottom: 10px;
-  margin-top: -20px;
+  margin-top: -10px;
 }
 
 .Weather .weather-temperature {
@@ -69,4 +69,7 @@
 .weather-current-info {
   margin-top: 40px;
   font-size: 14px;
+}
+.weekday {
+  font-weight: 200;
 }
