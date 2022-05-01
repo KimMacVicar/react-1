@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import "./WeatherForecast.css";
 import axios from "axios";
-import WeatherForecastDay from "./WeatherForecastDay";
+import WeatherForecastFuture from "./WeatherForecastFuture";
 
 export default function WeatherForecast(props) {
   let [loaded, setLoaded] = useState(false);
@@ -19,7 +19,7 @@ export default function WeatherForecast(props) {
         <div className="row">
           <div className="card d-flex">
             <div className="col-4 ">
-              <WeatherForecastDay data={forecast[0]} />
+              <WeatherForecastFuture data={forecast[0]} />
             </div>
           </div>
         </div>
