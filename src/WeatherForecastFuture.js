@@ -22,10 +22,12 @@ export default function WeatherForecasFuture(props) {
   }
 
   return (
-    <div className="container">
+    <div className="container fore">
       <div className="row">
-        <div className=" col-4 d-flex weather-forecast-date">{day()}</div>
-        <WeatherIcon code={props.data.weather[0].icon} size={20} />
+        <div className=" col-2 d-flex weather-forecast-date float-right">
+          {day()}
+        </div>
+        <WeatherIcon code={props.data.weather[0].icon} />
         <div className="weather-forecast-temperatures">
           <span className="weather-forecast-temperature-max">
             max: {maxTemperature()}
@@ -37,7 +39,7 @@ export default function WeatherForecasFuture(props) {
         </div>
 
         <div className=" col-4 d-flex  weather-forecast-date">{day()}</div>
-        <WeatherIcon code={props.data.weather[0].icon} size={20} />
+        <WeatherIcon code={props.data.weather[0].icon} />
         <div className="weather-forecast-temperatures">
           <span className="weather-forecast-temperature-max">
             max: {maxTemperature()}

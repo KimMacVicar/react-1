@@ -15,23 +15,25 @@ export default function WeatherForecast(props) {
 
   if (loaded) {
     return (
-      <div className="weather-forecast">
-        <div className="row">
-          <div className="card d-flex">
-            <div className="col-4 ">
-              <WeatherForecastFuture data={forecast[0]} />
+      <div className="container">
+        <div className="weather-forecast">
+          <div className="row">
+            <div className="d-flex">
+              <div className="col-2 ">
+                <WeatherForecastFuture data={forecast[0]} />
+              </div>
             </div>
           </div>
         </div>
       </div>
     );
   } else {
-    let apiKey = "b81e7138d4f18ecdce4149c89f6f0058";
+    let apiKey = "2d34b827fa05a5518d1b4d8e1f540549";
     let longitude = props.coordinates.lon;
     let latitude = props.coordinates.lat;
     let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
 
-    return null;
+    return <div></div>;
   }
 }

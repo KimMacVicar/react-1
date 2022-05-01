@@ -13,6 +13,7 @@ export default function App() {
         <div className=" row d-flex justify-content-center">
           <h1 className="WeatherAppTitle">Weather App</h1>
           <div className="row">
+            <div className="col-12"></div>
             <div className="col-12">
               <Weather className="col-4" city="Saskatoon" />
             </div>
