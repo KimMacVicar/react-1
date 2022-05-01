@@ -5,7 +5,6 @@ import "bootstrap/dist/css/bootstrap.css";
 import CoderStamp from "./CoderStamp";
 import ReactDOM from "react-dom";
 import Weather from "./weather";
-import WeatherForecastDay from "./WeatherForecastDay";
 
 export default function App() {
   return (

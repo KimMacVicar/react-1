@@ -21,6 +21,7 @@
   margin-left: 5px;
   margin-right: 2px;
   max-width: 800px;
+  border-color: #afbbca;
 }
 
 .Weather .btn {
@@ -45,6 +46,7 @@
   line-height: 1;
   font-weight: 400;
   padding-top: -60px;
+  margin-left: -20px;
 }
 
 .Weather .weather-temperature .units {
