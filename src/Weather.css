@@ -1,0 +1,60 @@
+.Weather {
+  max-width: 1000px;
+  max-height: 700px;
+  margin: 0px auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  opacity: 85%;
+}
+.Weather .overview {
+  max-width: 900px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.Weather .form-control {
+  box-shadow: 2px 2px 2px #c2cede;
+  text-decoration-color: #afbbca;
+  padding-left: 5px;
+  margin-left: 5px;
+  margin-right: 2px;
+  max-width: 800px;
+}
+
+.Weather .btn {
+  margin-left: 1px;
+  box-shadow: 2px 2px 2px #c2cede;
+  border: 1px solid #afbbca;
+}
+
+.Weather .formatteddate {
+  line-height: 30px;
+  font-weight: bolder;
+}
+.Weather .weather-temperature canvas {
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: -20px;
+}
+
+.Weather .weather-temperature {
+  color: var(--main-color);
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 400;
+  padding-top: -60px;
+}
+
+.Weather .weather-temperature .units {
+  font-size: 16px;
+}
+
+.Weather .weather-temperature .units:active {
+  cursor: default;
+}
+
+.Weather .weather-temperature .units:hover {
+  text-decoration: none;
+}

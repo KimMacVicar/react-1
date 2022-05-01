@@ -4,3 +4,13 @@
   text-align: left;
   color: rgb(216, 228, 238);
 }
+.row {
+  bs-gutter-x: 0 !important;
+}
+.link {
+  color: rgb(216, 228, 238);
+  text-decoration: none;
+}
+.link:hover {
+  color: black;
+}

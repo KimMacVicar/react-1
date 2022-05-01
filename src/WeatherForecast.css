@@ -1,0 +1,49 @@
+.Weather .card {
+  text-align: center;
+  height: 150px;
+  max-width: 250px;
+  border: none;
+  padding: 5px;
+}
+
+.Weather .weather-forecast {
+  text-align: center;
+  color: var(--main-color);
+}
+
+.Weather .weather-forecast-date {
+  text-align: center;
+  margin-top: 0px;
+  margin-left: 20px;
+  font-size: 12px;
+}
+
+.Weather .weather-forecast-temperatures {
+  text-align: center;
+  margin-left: 0px;
+  font-size: 12px;
+}
+.Weather .weather-forecast-temperature-max {
+  text-align: center;
+  font-weight: bolder;
+}
+.Weather .weather-forecast-temperature-min {
+  opacity: 0.75;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .Weather .weather-forecast .card {
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .Weather .weather-forecast-date {
+    font-size: 10px;
+    text-align: center;
+  }
+}
