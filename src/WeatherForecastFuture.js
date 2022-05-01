@@ -26,28 +26,94 @@ export default function WeatherForecasFuture(props) {
       <div className="row">
         <div className=" col-2 d-flex weather-forecast-date float-right">
           {day()}
-        </div>
-        <WeatherIcon code={props.data.weather[0].icon} />
-        <div className="weather-forecast-temperatures">
-          <span className="weather-forecast-temperature-max">
-            max: {maxTemperature()}
-          </span>
-          <br />
-          <span className="weather-forecast-temperature-min">
-            min: {minTemperature()}
-          </span>
-        </div>
+          <li className="icon2">
+            <WeatherIcon code={props.data.weather[0].icon} />
+          </li>
+          <div className="weather-forecast-temperatures">
+            <span className="weather-forecast-temperature-max">
+              max: {maxTemperature()}
+            </span>
+            <br />
+            <span className="weather-forecast-temperature-min">
+              min: {minTemperature()}
+            </span>
+          </div>
+          <div className=" col-2 d-flex weather-forecast-date float-right">
+            {day()}
+            <li className="icon2">
+              <WeatherIcon code={props.data.weather[0].icon} />
+            </li>
+            <div className="weather-forecast-temperatures">
+              <span className="weather-forecast-temperature-max">
+                max: {maxTemperature()}
+              </span>
+              <br />
+              <span className="weather-forecast-temperature-min">
+                min: {minTemperature()}
+              </span>
+            </div>
+            <div className=" col-2 d-flex weather-forecast-date float-right">
+              {day()}
+              <li className="icon2">
+                <WeatherIcon code={props.data.weather[0].icon} />
+              </li>
+              <div className="weather-forecast-temperatures">
+                <span className="weather-forecast-temperature-max">
+                  max: {maxTemperature()}
+                </span>
+                <br />
+                <span className="weather-forecast-temperature-min">
+                  min: {minTemperature()}
+                </span>
+              </div>
 
-        <div className=" col-4 d-flex  weather-forecast-date">{day()}</div>
-        <WeatherIcon code={props.data.weather[0].icon} />
-        <div className="weather-forecast-temperatures">
-          <span className="weather-forecast-temperature-max">
-            max: {maxTemperature()}
-          </span>
-          <br />
-          <span className="weather-forecast-temperature-min">
-            min: {minTemperature()}
-          </span>
+              <div className=" col-2 d-flex weather-forecast-date float-right">
+                {day()}
+                <li className="icon2">
+                  <WeatherIcon code={props.data.weather[0].icon} />
+                </li>
+                <div className="weather-forecast-temperatures">
+                  <span className="weather-forecast-temperature-max">
+                    max: {maxTemperature()}
+                  </span>
+                  <br />
+                  <span className="weather-forecast-temperature-min">
+                    min: {minTemperature()}
+                  </span>
+                </div>
+                <div className=" col-2 d-flex weather-forecast-date float-right">
+                  {day()}
+                  <li className="icon2">
+                    <WeatherIcon code={props.data.weather[0].icon} />
+                  </li>
+                  <div className="weather-forecast-temperatures">
+                    <span className="weather-forecast-temperature-max">
+                      max: {maxTemperature()}
+                    </span>
+                    <br />
+                    <span className="weather-forecast-temperature-min">
+                      min: {minTemperature()}
+                    </span>
+                  </div>
+                  <div className=" col-2 d-flex weather-forecast-date float-right">
+                    {day()}
+                    <li className="icon2">
+                      <WeatherIcon code={props.data.weather[0].icon} />
+                    </li>
+                    <div className="weather-forecast-temperatures">
+                      <span className="weather-forecast-temperature-max">
+                        max: {maxTemperature()}
+                      </span>
+                      <br />
+                      <span className="weather-forecast-temperature-min">
+                        min: {minTemperature()}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
