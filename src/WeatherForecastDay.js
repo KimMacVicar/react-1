@@ -24,7 +24,7 @@ export default function WeatherForecastDay(props) {
   return (
     <div className="container">
       <div className="row">
-        <div className="d-flex col-4 weather-forecast-date">{day()}</div>
+        <div className=" col-4 d-flex weather-forecast-date">{day()}</div>
         <WeatherIcon code={props.data.weather[0].icon} size={20} />
         <div className="weather-forecast-temperatures">
           <span className="weather-forecast-temperature-max">
@@ -35,7 +35,8 @@ export default function WeatherForecastDay(props) {
             min: {minTemperature()}
           </span>
         </div>
-        <div className=" d-flex col-4 weather-forecast-date">{day()}</div>
+
+        <div className=" col-4 d-flex  weather-forecast-date">{day()}</div>
         <WeatherIcon code={props.data.weather[0].icon} size={20} />
         <div className="weather-forecast-temperatures">
           <span className="weather-forecast-temperature-max">

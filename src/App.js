@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import CoderStamp from "./CoderStamp";
 import ReactDOM from "react-dom";
 import Weather from "./weather";
+import WeatherForecastDay from "./WeatherForecastDay";
 
 export default function App() {
   return (
@@ -18,8 +19,11 @@ export default function App() {
             </div>
           </div>
         </div>
+        <div className="row">
+          <div className="col-4"></div>
+        </div>
         <div className="col-12">
-          <div className="row d-flex justify-content-left">
+          <div className="row d-flex ">
             <CoderStamp />
           </div>
         </div>
