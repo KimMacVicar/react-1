@@ -60,3 +60,13 @@
 .Weather .weather-temperature .units:hover {
   text-decoration: none;
 }
+.weather-icon {
+  padding-top: 30px;
+}
+.temp {
+  margin-left: -12px;
+}
+.weather-current-info {
+  margin-top: 40px;
+  font-size: 14px;
+}
