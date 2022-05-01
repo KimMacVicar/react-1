@@ -5,10 +5,11 @@ import "bootstrap/dist/css/bootstrap.css";
 import CoderStamp from "./CoderStamp";
 import ReactDOM from "react-dom";
 import Weather from "./weather";
+import WeatherForecast from "./WeatherForecast";
 
 export default function App() {
   return (
-    <div className="container">
+    <div className="container app-wrapper">
       <div className="col-12">
         <div className=" row d-flex justify-content-center">
           <h1 className="WeatherAppTitle">Weather App</h1>
