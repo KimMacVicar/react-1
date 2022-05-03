@@ -13,7 +13,18 @@ export default function CoderStamp() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Open-source code
+              Open-source code on GitHub
+            </a>
+          </span>
+          <span>
+            <span> </span>
+            <a
+              className="link"
+              href="https://dapper-dieffenbachia-805b86.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              and hosted on Netlify
             </a>
           </span>
           <span className="Name"> created by Kim MacVicar</span>
