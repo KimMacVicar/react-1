@@ -6,10 +6,10 @@
   padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  opacity: 85%;
+  opacity: 0.85;
 }
 .Weather .overview {
-  max-width: 900px;
+  max-width: 1000px;
   margin-bottom: 20px;
   margin-left: 5px;
   margin-right: 5px;
@@ -51,6 +51,7 @@
 
 .Weather .weather-temperature .units {
   font-size: 16px;
+  font-weight: bolder;
 }
 
 .Weather .weather-temperature .units:active {
@@ -61,7 +62,9 @@
   text-decoration: none;
 }
 .weather-icon {
-  padding-top: 30px;
+  padding-top: 10px;
+  max-width: 333px;
+  max-height: 200px;
 }
 .temp {
   margin-left: -12px;

@@ -9,7 +9,7 @@ export default function CoderStamp() {
           <span>
             <a
               className="link"
-              href="https://coruscating-entremet-717559.netlify.app"
+              href="https://github.com/KimMacVicar/react-1"
               target="_blank"
               rel="noopener noreferrer"
             >

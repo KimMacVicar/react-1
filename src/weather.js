@@ -17,13 +17,13 @@ export default function Weather(props) {
       date: new Date(response.data.dt * 1000),
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
-      gusts: response.data.wind.gust,
+      gusts: response.data.main.gust,
       city: response.data.name,
       icon: response.data.weather[0].icon,
     });
   }
   function search() {
-    const apiKey = "2d34b827fa05a5518d1b4d8e1f540549";
+    let apiKey = "2d34b827fa05a5518d1b4d8e1f540549";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(displayWeather);
   }
