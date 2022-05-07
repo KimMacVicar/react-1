@@ -5,12 +5,12 @@ import axios from "axios";
 import WeatherForecastFuture from "./WeatherForecastFuture";
 
 export default function WeatherForecast(props) {
-  let [loaded, setLoaded] = useState(false);
+  let [loaded] = useState(false);
   let [forecast, setForecast] = useState(null);
 
   function handleResponse(response) {
     setForecast(response.data.daily);
-    setLoaded(true);
+    //setLoaded(true);
   }
 
   if (loaded) {
